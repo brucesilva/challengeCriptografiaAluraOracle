@@ -164,3 +164,16 @@ aside .copiar{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+footer{
+    margin-top: 10px;
+    margin-left: 360px;
+}
+footer .facebook, .instagram{
+    width: 12px;
+    margin-left: 3px;
+}
+.autor{
+    display: inline-block;
+    font-weight: bold;
+}
