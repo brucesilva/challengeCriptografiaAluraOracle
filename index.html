@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Decodificador</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="imgA">
+            <img src="assets/img/imgA.png" alt="">
+        </header>
+
+        <section>
+            <div id="textoAutomatico"></div>
+        </section>
+
+        <section class="inputText"> 
+            <textarea name="msgParaCriptografar" id="msgParaCriptografar" cols="30" rows="5" placeholder="Escreva seu texto aqui" required></textarea>
+        </section>
+
+        <section class="msgUsuario">
+         <img class="info" src="assets/img/info.svg" alt=""> 
+          <p> Apenas letras minusculas e sem acento</p>
+        </section>
+
+        <section class="botoes">  
+            <button type="button" onclick="msgCriptografada()" class="btn btn-primary">Criptografar</button>
+            <button type="button" onclick="descriptografar()" class="btn btn-light">Descriptografar</button>
+        </section>
+
+        <aside class="msg">
+
+            <div class="msgCriptografada">
+                <!-- aqui esta vindo a mgs criptografa digitada sozinha -->
+               <h2>
+                <div id="text">Mensagem criptografada vai aparecer aqui.</div>
+               </h2>
+            </div>
+
+            <img id="pesquisando" src="assets/img/pesquisando.svg" alt="">
+
+            <!-- aqui esotu escondendo a msg e abaixo vou colocar o botão para aparecer -->
+            <div id="escondeMsg"><h2>Nenhuma mensagem encontrada</h2></div> 
+            
+            <div id="btnCopiar">
+                <button class="btn btn-warning copiar"  onclick="copiaTexto()">Copiar texto criptografado
+                </button>
+            </div> 
+
+            <div id="btnTextoCopiado">
+                <button class="btn btn-warning copiar"  onclick="copiaTexto()">Texto Copiado
+                </button>
+            </div> 
+
+
+            <p>Digite um texto ao lado que você queira Criptografar ou Descriptografar!!</p>
+
+        </aside>
+         
+    </div><!-- fecha div Container -->
+
+    
+    
+
+
+    <script src="assets/js/criptografiaDescriptografia.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
